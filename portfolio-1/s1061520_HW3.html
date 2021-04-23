@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>大富翁作業</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="s1061520_HW3.css">
+	<script type="text/javascript" src="s1061520_HW3.js"></script>
+
+</head>
+
+<body style="background-color:#829CBC;">
+
+
+
+<img src="./images/blue-dot.png" id="dot1" style="position: absolute; top:20px; left: 300px;" /> 
+<img src="./images/green-dot.png" id="dot2" style="position: absolute; top:70px; left: 300px;" />  
+<img src="./images/red-dot.png" id="dot3" style="position: absolute; top:20px; left: 360px;" />
+<img src="./images/yellow-dot.png" id="dot4" style="position: absolute; top:70px; left: 360px;" />
+
+
+<div id="point">  <!--這是玩家目前的資料-->
+
+	<div id="p1" class="playerInfo">
+		<img src="./images/blue-dot.png" class="playerInfoImg" />
+		<h3>玩家 1</h3>
+		<p>餘額 : </span><span id="money1"></p>
+	</div>
+	<div id="p2" class="playerInfo">
+		<img src="./images/green-dot.png" class="playerInfoImg" />
+		<h3>玩家 2</h3>
+		<span>餘額 : </span><span id="money2"></p>
+		
+	</div>
+	<div id="p3" class="playerInfo">
+		<img src="./images/red-dot.png" class="playerInfoImg" />
+		<h3>玩家 3</h3>
+		<p>餘額 : </span><span id="money3"></p>
+		
+	</div>
+	<div id="p4" class="playerInfo">
+		<img src="./images/yellow-dot.png" class="playerInfoImg" />
+		<h3>玩家 4</h3>
+		<p>餘額 : </span><span id="money4"></p>
+		
+	</div>
+</div>
+
+<table id="board"> <!-- 這個目前的這張圖 -->
+
+	<tr>
+		<td id="0" >原點</td>
+		<td id="1"></td>
+		<td id="2"></td>
+		<td id="3"></td>
+		<td id="4"></td>
+		<td id="5"></td>
+	</tr>
+	<tr>
+		<td id="19"></td>
+		<td rowspan="4" colspan="4" style="text-align: center; background-color: gainsboro;">  <!-- 這個是中間的那個骰子跟按鈕 -->
+			<img id="pic_dice" src="./images/blank.png" /><br><br> 
+			<input id="btn_roll" type="button" value="roll" style="font-size: 50px; width: 100px; height: 80px;"/><br><br>
+			<img src="./images/mark.jpg" />
+		</td>
+		<td id="6"></td>
+	</tr>
+	<tr>
+		<td id="18"></td>
+		<td id="7"></td>
+	</tr>
+	<tr>
+		<td id="17"></td>
+		<td id="8"></td>
+	</tr>
+	<tr>
+		<td id="16"></td>
+		<td id="9"></td>
+	</tr>
+	<tr>
+		<td id="15"></td>
+		<td id="14"></td>
+		<td id="13"></td>
+		<td id="12"></td>
+		<td id="11"></td>
+		<td id="10"></td>
+	</tr>
+</table>
+
+<br>
+<p id='msg'></p>
+</body>
+</html>
